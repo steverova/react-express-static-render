@@ -1,4 +1,5 @@
 import path from 'node:path'
+
 import compression from 'compression'
 import cors from 'cors'
 import dotenv from 'dotenv'
@@ -10,12 +11,12 @@ import express, {
 import rateLimit from 'express-rate-limit'
 import helmet from 'helmet'
 import morgan from 'morgan'
+import greetings from '../../_shared/shared'
 import type {
 	ApiResponse,
 	EchoResponse,
 	HealthResponse
-} from '@/types/shared.types'
-import greetings from '../../_shared/shared'
+} from './types/shared.types'
 
 dotenv.config()
 
