@@ -3,13 +3,14 @@ import { Field, FieldLabel } from '../ui/field'
 import { Input } from '../ui/input'
 
 type InputFieldProps = React.ComponentProps<'input'> & {
+  required?: boolean
 	placeholder?: string
 	error?: boolean
 	key: string
 	labelText?: string
 	name?: string
 	type?: 'email' | 'password' | 'text' | 'number' | 'tel' | 'url' | 'search'
-	helperText?: string | null
+	helperText?: string | null | undefined
 }
 
 export default function InputField({
@@ -23,7 +24,6 @@ export default function InputField({
 	...props
 }: InputFieldProps): JSX.Element {
 	const id = useId()
-
 	return (
 		<Field>
 			<FieldLabel htmlFor={`${id}-${key}`}>
