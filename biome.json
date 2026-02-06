@@ -1,0 +1,130 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.3.14/schema.json",
+	"vcs": {
+		"enabled": false,
+		"clientKind": "git",
+		"useIgnoreFile": false
+	},
+	"files": {
+		"ignoreUnknown": false,
+		"includes": [
+			"_client/**",
+			"_server/**"
+		]
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab"
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"a11y": "on",
+			"correctness": {
+				"noNestedComponentDefinitions": "error",
+				"noUndeclaredVariables": "error",
+				"useJsonImportAttributes": "error",
+				"useUniqueElementIds": "warn"
+			},
+			"nursery": {
+				"useSpread": "error",
+				"useSortedClasses": "off",
+				"useMaxParams": "error",
+				"useExplicitType": "warn",
+				"useErrorCause": "error",
+				"useDestructuring": "error",
+				"noUselessUndefined": "error",
+				"noUselessCatchBinding": "error",
+				"noUnusedExpressions": "error",
+				"noUnresolvedImports": "off",
+				"noUnnecessaryConditions": "error",
+				"noUnknownAttribute": "error",
+				"noShadow": "error",
+				"noReturnAssign": "error",
+				"noReactForwardRef": "error",
+				"noParametersOnlyUsedInRecursion": "error",
+				"noNextAsyncClientComponent": "error",
+				"noMultiStr": "error",
+				"noImportCycles": "error",
+				"noDeprecatedImports": "error",
+				"noDuplicateEnumValues": "error",
+				"noDuplicatedSpreadProps": "error",
+				"noMultiAssign": "error",
+				"noMisusedPromises": "error",
+				"noLeakedRender": "error",
+				"noEmptySource": "error",
+				"noEqualsToNull": "error",
+				"noExcessiveClassesPerFile": "error",
+				"noForIn": "warn",
+				"noFloatingClasses": "error"
+			},
+			"style": {
+				"noImplicitBoolean": "error",
+				"noNegationElse": "error",
+				"noParameterAssign": "error",
+				"noParameterProperties": "error",
+				"noUnusedTemplateLiteral": "error",
+				"noUselessElse": "warn",
+				"useThrowOnlyError": "error",
+				"useThrowNewError": "error",
+				"useShorthandAssign": "error",
+				"useSelfClosingElements": "error",
+				"useNodejsImportProtocol": "error",
+				"useNamingConvention": "off",
+				"useFragmentSyntax": "warn",
+				"useForOf": "error",
+				"useFilenamingConvention": "off",
+				"useExportType": "error",
+				"useExplicitLengthCheck": "error",
+				"useConst": "error",
+				"useConsistentCurlyBraces": "error",
+				"useCollapsedIf": "error",
+				"useBlockStatements": "off",
+				"useAsConstAssertion": "error",
+				"useArrayLiterals": "error"
+			},
+			"suspicious": {
+				"noEmptyBlockStatements": "error",
+				"noUnassignedVariables": "error",
+				"useAwait": "warn"
+			},
+			"complexity": {
+				"noForEach": "warn",
+				"noUselessStringConcat": "warn",
+				"useSimplifiedLogicExpression": "warn"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single",
+			"trailingCommas": "none",
+			"arrowParentheses": "always",
+			"bracketSameLine": true,
+			"bracketSpacing": true,
+			"jsxQuoteStyle": "single",
+			"quoteProperties": "asNeeded",
+			"semicolons": "asNeeded",
+			"attributePosition": "auto"
+		}
+	},
+	"assist": {
+		"enabled": true,
+		"actions": {
+			"source": {
+				"organizeImports": "on",
+				"useSortedAttributes": "on"
+			}
+		}
+	},
+	"json": {
+		"formatter": {
+			"enabled": true,
+			"trailingCommas": "none"
+		},
+		"linter": {
+			"enabled": true
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "name": "@vite-static-render/shared",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "shared.ts",
+  "types": "shared.ts"
+}
