@@ -1,6 +1,6 @@
-import { Button } from '@/components/ui/button'
 import type { JSX } from 'react'
 import { useNavigate } from 'react-router'
+import { Button } from '@/components/ui/button'
 
 export default function DetailsPage(): JSX.Element {
 	const navigate = useNavigate()

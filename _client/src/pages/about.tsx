@@ -1,5 +1,5 @@
-export default function AboutPage() {
-  return (
-    <div>AboutPage</div>
-  )
+import type { JSX } from 'react'
+
+export default function AboutPage(): JSX.Element {
+	return <div>AboutPage</div>
 }
